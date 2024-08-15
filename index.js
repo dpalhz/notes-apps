@@ -3,8 +3,6 @@ import { startStandaloneServer } from "@apollo/server/standalone";
 import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
-
-// Definisikan typeDefs untuk schema GraphQL
 const typeDefs = `#graphql
   type Note {
     id: String!
@@ -25,17 +23,16 @@ const typeDefs = `#graphql
   }
 `;
 
-// Definisikan resolvers untuk mengatur query dan mutation
 const resolvers = {
   Mutation: {
     addNote: async (parent, args) => {
-      const now = new Date().toISOString(); // Mendapatkan string ISO dari tanggal saat ini
+      const now = new Date().toISOString();
 
       return await prisma.note.create({
         data: {
           title: args.title,
           body: args.body,
-          createdAt: now, // Menggunakan string ISO
+          createdAt: now,
         },
       });
     },
@@ -45,7 +42,6 @@ const resolvers = {
         data: {
           title: args.title,
           body: args.body,
-          // Jika Anda tidak ingin mengubah createdAt, jangan sertakan dalam data
         },
       });
     },
