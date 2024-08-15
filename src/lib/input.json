@@ -1,0 +1,27 @@
+[
+  {
+    "id": "1",
+    "title": "Meeting Notes",
+    "body": "Discussed project milestones and deadlines."
+  },
+  {
+    "id": "2",
+    "title": "Grocery List",
+    "body": "Buy milk, eggs, bread, and fruits."
+  },
+  {
+    "id": "3",
+    "title": "Fitness Routine",
+    "body": "Run 5km in the morning and do strength training in the evening."
+  },
+  {
+    "id": "4",
+    "title": "Holiday Planning",
+    "body": "Research destinations, book flights, and prepare itinerary."
+  },
+  {
+    "id": "5",
+    "title": "Project Ideas",
+    "body": "Brainstorm new features for the upcoming project release."
+  }
+]
