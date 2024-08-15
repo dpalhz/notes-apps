@@ -1,5 +1,3 @@
-Berikut adalah contoh file `README.md` untuk frontend aplikasi Notes menggunakan Next.js, Apollo Client, Chakra UI, dan GraphQL:
-
 # Notes Application - Frontend
 
 This repository contains the frontend code for the Notes Application, built with Next.js, Apollo Client, Chakra UI, and GraphQL.
