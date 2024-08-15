@@ -2,7 +2,7 @@ import "@/styles/globals.css";
 
 // pages/_app.js
 import { ApolloProvider } from "@apollo/client";
-import client from "../lib/apolloClient"; // Import Apollo Client yang sudah dibuat
+import client from "../lib/apolloClient";
 import { ChakraProvider } from "@chakra-ui/react";
 
 function MyApp({ Component, pageProps }) {

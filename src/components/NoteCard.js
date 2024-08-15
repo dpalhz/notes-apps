@@ -25,7 +25,6 @@ const NoteCard = ({ note, onEditClick, onCardClick }) => {
     setCardColor(randomColor);
   }, [note.id]);
 
-  // Function to truncate text with ellipsis
   const truncateText = (text, maxLength) => {
     return text.length > maxLength
       ? `${text.substring(0, maxLength)}...`
@@ -75,7 +74,7 @@ const NoteCard = ({ note, onEditClick, onCardClick }) => {
           _hover={{ bg: "gray.700" }}
           icon={<EditIcon />}
           onClick={(e) => {
-            e.stopPropagation(); // Menghentikan propagasi agar tidak memicu onCardClick
+            e.stopPropagation();
             onEditClick();
           }}
           aria-label="Edit Note"

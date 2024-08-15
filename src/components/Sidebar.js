@@ -51,7 +51,7 @@ export default function Sidebar({ openAddModal }) {
             bg="white"
             _hover={{
               bg: "gray.700",
-              "& > div > svg": { color: "white" }, // Ubah warna ikon saat di-hover
+              "& > div > svg": { color: "white" },
             }}
             size={{ base: "sm", md: "md" }}
           >

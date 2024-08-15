@@ -94,11 +94,7 @@ const Notes = () => {
 
   if (loading) {
     return (
-      <Flex
-        alignItems="center"
-        justifyContent="center"
-        height="100vh" // Mengatur tinggi agar Flex memenuhi layar
-      >
+      <Flex alignItems="center" justifyContent="center" height="100vh">
         <Spinner
           thickness="4px"
           speed="0.65s"
@@ -115,8 +111,8 @@ const Notes = () => {
       <Flex
         alignItems="center"
         justifyContent="center"
-        height="100vh" // Mengatur tinggi agar Flex memenuhi layar
-        bg="red.50" // Memberikan background warna merah muda
+        height="100vh"
+        bg="red.50"
       >
         <Text
           fontSize="lg"
@@ -134,7 +130,6 @@ const Notes = () => {
     );
   }
 
-  // Sort notes based on selected mode
   const sortedNotes = data.getNotes.slice().sort((a, b) => {
     if (sortMode === "latest") {
       return new Date(b.createdAt) - new Date(a.createdAt);
@@ -221,10 +216,10 @@ const Notes = () => {
           bg="black"
           _hover={{ bg: "gray.700" }}
           position="fixed"
-          bottom="30px" // jarak dari bawah
-          left="50%" // posisi horizontal tengah
-          transform="translateX(-50%)" // untuk mengatur tombol tepat di tengah horizontal
-          display={{ base: "block", md: "none" }} // tampilkan hanya di perangkat kecil
+          bottom="30px"
+          left="50%"
+          transform="translateX(-50%)"
+          display={{ base: "block", md: "none" }}
         >
           <AddIcon
             boxSize={{ base: 2, md: 3 }}
